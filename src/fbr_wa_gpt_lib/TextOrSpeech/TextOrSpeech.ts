@@ -27,10 +27,10 @@ export class TextOrSpeech {
                 response_format: "text",
             });
 
-            if (typeof transcription === 'string' || transcription instanceof String) {
+            if (typeof transcription === 'string' || (transcription as any) instanceof String) {
                 return transcription as unknown as string;
             } else {
-                return transcription.text;
+                return (transcription as any).text;
             }
         } catch (error) {
 
