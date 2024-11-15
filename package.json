@@ -43,6 +43,7 @@
     "openai": "^4.52.7",
     "qrcode-terminal": "^0.12.0",
     "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7",
     "tmp": "^0.2.3",
     "whatsapp-web.js": "github:pedroslopez/whatsapp-web.js#main"
   }
